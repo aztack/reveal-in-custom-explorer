@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run compile:*)",
+      "Bash(npm install:*)",
+      "Bash(pnpm add:*)",
+      "Bash(npm run package:*)",
+      "Bash(convert:*)",
+      "Bash(magick:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

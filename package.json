@@ -1,0 +1,70 @@
+{
+  "name": "reveal-in-custom-explorer",
+  "displayName": "Reveal in Custom Explorer",
+  "description": "Reveal files and folders in a custom file explorer application from VS Code",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aztack/reveal-in-custom-explorer"
+  },
+  "activationEvents": [
+    "onCommand:revealInCustomExplorer.reveal",
+    "onCommand:revealInCustomExplorer.configure"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "revealInCustomExplorer.reveal",
+        "title": "Reveal in Custom Explorer"
+      },
+      {
+        "command": "revealInCustomExplorer.configure",
+        "title": "Configure Custom Explorer"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "revealInCustomExplorer.reveal",
+          "group": "navigation@30",
+          "when": "explorerResourceIsFolder || !explorerResourceIsFolder"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "",
+      "properties": {
+        "revealInCustomExplorer.explorerPath": {
+          "type": "string",
+          "default": "/System/Applications/Finder.app",
+          "description": "Path to the file explorer application. You can enter any custom path to your preferred file explorer."
+        },
+        "revealInCustomExplorer.useOpenCommand": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use 'open' command instead of direct application launch (recommended for most apps)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@vscode/vsce": "^3.6.0",
+    "typescript": "^4.9.4"
+  }
+}

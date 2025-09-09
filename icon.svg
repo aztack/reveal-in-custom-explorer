@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="rgb(248,249,250)" stroke="rgb(233,236,239)" stroke-width="2"/>
+  
+  <!-- Main folder icon -->
+  <path d="M25 45 L25 85 Q25 90 30 90 L98 90 Q103 90 103 85 L103 55 Q103 50 98 50 L60 50 L55 45 Q52 42 48 42 L30 42 Q25 42 25 45 Z" 
+        fill="rgb(74,144,226)" stroke="rgb(46,92,138)" stroke-width="1"/>
+  
+  <!-- Folder tab -->
+  <path d="M48 42 L48 35 Q48 32 51 32 L70 32 Q73 32 73 35 L73 42" 
+        fill="rgb(91,160,242)" stroke="rgb(46,92,138)" stroke-width="1"/>
+  
+  <!-- Arrow background circle -->
+  <circle cx="75" cy="60" r="18" fill="rgb(255,107,107)" fill-opacity="0.9"/>
+  
+  <!-- Arrow pointing outward -->
+  <path d="M67 60 L83 60 M78 55 L83 60 L78 65" 
+        stroke="rgb(255,255,255)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Small sparkle effects -->
+  <circle cx="35" cy="35" r="2" fill="rgb(255,215,0)"/>
+  <circle cx="90" cy="30" r="1.5" fill="rgb(255,215,0)"/>
+  <circle cx="110" cy="75" r="1" fill="rgb(255,215,0)"/>
+  
+  <!-- Star sparkle -->
+  <g transform="translate(42, 30) scale(0.6)">
+    <path d="M0 -8 L2 -2 L8 -2 L3 2 L5 8 L0 4 L-5 8 L-3 2 L-8 -2 L-2 -2 Z" 
+          fill="rgb(255,215,0)" fill-opacity="0.7"/>
+  </g>
+</svg>
