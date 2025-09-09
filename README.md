@@ -2,6 +2,8 @@
 
 A VS Code extension that adds a configurable "Reveal in Custom Explorer" menu item to the Explorer context menu, allowing you to use your preferred file explorer application instead of the default Finder.
 
+![config](./configuration.png)
+
 ## Features
 
 - Adds a customizable context menu item to the Explorer view

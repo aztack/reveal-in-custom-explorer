@@ -3,6 +3,7 @@
   "displayName": "Reveal in Custom Explorer",
   "description": "Reveal files and folders in a custom file explorer application from VS Code",
   "version": "1.0.0",
+  "publisher": "aztack",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.74.0"
